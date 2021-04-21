@@ -75,8 +75,8 @@ class BST {
     while (q.length !== 0) {
       let dq = q.shift(); // DEQUEU the first value (FIFO) into a new variable by using the array method SHIFT
       visited.push(dq.val); // push the value into visited array
-      if (dq.right) q.push(dq.right); // check if we do have right and push that into the queue
       if (dq.left) q.push(dq.left); // check if we have the left and push that into the queue
+      if (dq.right) q.push(dq.right); // check if we do have right and push that into the queue
     }
     return visited;
   }
